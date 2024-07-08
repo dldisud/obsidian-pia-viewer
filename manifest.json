@@ -1,7 +1,10 @@
 {
-  "id": "Mobile-typography",
+  "id": "mobile-typography",
   "name": "Mobile typography",
-  "author": "dldisud",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
   "description": "A plugin to apply Mobile typography styles",
-  "repo": "dldisud/obsidian-typography-styles"
+  "author": "dldisud",
+  "authorUrl": "https://github.com/dldisud",
+  "isDesktopOnly": false
 }
