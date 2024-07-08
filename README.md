@@ -8,4 +8,4 @@
 
 #This is a typeface for the Obsidian program.
 
-#Currently, we only support two for Moonpia and Novelpia, but if you have a request, I will make another format as well.
+#Currently, we only support two for Munpia and Novelpia, but if you have a request, I will make another format as well.
