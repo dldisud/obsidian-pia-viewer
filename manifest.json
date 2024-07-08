@@ -1,0 +1,10 @@
+{
+  "id": "Mobile-typography",
+  "name": "Mobile-Typography",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.0",
+  "description": "A plugin to apply custom typography styles in Obsidian.",
+  "author": "dldisud",
+  "authorUrl": "https://yourwebsite.com",
+  "isDesktopOnly": false
+}
