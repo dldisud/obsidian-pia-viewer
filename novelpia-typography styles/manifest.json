@@ -1,0 +1,10 @@
+{
+  "id": "mnovelpia-typography",
+  "name": "mnovelpia-Typography",
+  "version": "1.0.0",
+  "minAppVersion": "0.12.0",
+  "description": "A plugin to apply custom typography styles in Obsidian.",
+  "author": "dldisud",
+  "authorUrl": "https://github.com/dldisud/typography-styles.git",
+  "isDesktopOnly": false
+}
