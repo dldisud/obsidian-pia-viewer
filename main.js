@@ -27,7 +27,7 @@ class CustomTypographyPlugin extends Plugin {
         const munpia = `
             .markdown-preview-view {
                 width: 115mm;
-                height: 175mm;
+                height: 1188mm;
                 margin: 5mm 14mm 0mm 14mm;
                 padding-top: 15mm;
                 padding-bottom: 0mm;
