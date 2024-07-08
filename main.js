@@ -14,29 +14,30 @@ class CustomTypographyPlugin extends Plugin {
     }
 
     loadStyles() {
-        const novelpia = `
-            .markdown-preview-view {
-                width: 109mm;
-                height: 1188mm;
-                margin: 8mm 15.4mm 0mm 15.4mm;
-                padding-top: 0mm;
-                padding-bottom: 0mm;
-            }
-        `;
-
-        const munpia = `
-            .markdown-preview-view {
-                width: 115mm;
-                height: 1188mm;
-                margin: 5mm 14mm 0mm 14mm;
-                padding-top: 15mm;
-                padding-bottom: 0mm;
-            }
-        `;
+        const styles = {
+            munpia: `
+                .markdown-preview-view {
+                    width: 109mm;
+                    height: 1188mm;
+                    margin: 8mm 15.4mm 0mm 15.4mm;
+                    padding-top: 0mm;
+                    padding-bottom: 0mm;
+                }
+            `,
+            novelpia: `
+                .markdown-preview-view {
+                    width: 115mm;
+                    height: 1188mm; 
+                    margin: 5mm 14mm 0mm 14mm;
+                    padding-top: 5mm;
+                    padding-bottom: 0mm; 
+                }
+            `
+        };
 
         const style = document.createElement('style');
         style.id = 'custom-typography-style';
-        style.textContent = this.settings.selectedStyle === 'munpia' ? munpia : novelpia;
+        style.textContent = styles[this.settings.selectedStyle];
         document.head.appendChild(style);
     }
 
