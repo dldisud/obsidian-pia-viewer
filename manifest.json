@@ -1,6 +1,6 @@
 {
   "id": "mobile-typography",
-  "name": "Mobile-typography",
+  "name": "mobile-typography",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "A plugin to apply Mobile typography styles",
