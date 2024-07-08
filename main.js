@@ -14,7 +14,7 @@ class CustomTypographyPlugin extends Plugin {
     }
 
     loadStyles() {
-        const munpia = `
+        const novelpia = `
             .markdown-preview-view {
                 width: 109mm;
                 height: 1188mm;
@@ -24,7 +24,7 @@ class CustomTypographyPlugin extends Plugin {
             }
         `;
 
-        const novelpia = `
+        const munpia = `
             .markdown-preview-view {
                 width: 115mm;
                 height: 175mm;
