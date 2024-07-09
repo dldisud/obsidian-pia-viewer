@@ -18,19 +18,39 @@ class CustomTypographyPlugin extends Plugin {
             munpia: `
                 .markdown-preview-view {
                     width: 109mm;
-                    height: 1188mm;
-                    margin: 8mm 15.4mm 0mm 15.4mm;
-                    padding-top: 0mm;
-                    padding-bottom: 0mm;
+                    min-height: 1188mm;
+                    margin: 8mm auto;
+                    padding: 0mm;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+                .markdown-preview-sizer {
+                    width: 100%;
+                    max-width: 109mm;
+                    min-height: 1188mm;
+                }
+                .markdown-preview-sizer > div {
+                    width: 100%;
                 }
             `,
             novelpia: `
                 .markdown-preview-view {
                     width: 115mm;
-                    height: 1188mm; 
-                    margin: 5mm 14mm 0mm 14mm;
-                    padding-top: 5mm;
-                    padding-bottom: 0mm; 
+                    min-height: 1188mm;
+                    margin: 5mm auto;
+                    padding: 5mm 0mm 0mm;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+                .markdown-preview-sizer {
+                    width: 100%;
+                    max-width: 115mm;
+                    min-height: 1188mm;
+                }
+                .markdown-preview-sizer > div {
+                    width: 100%;
                 }
             `
         };
