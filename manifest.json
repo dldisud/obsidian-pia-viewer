@@ -3,7 +3,7 @@
   "name": "Mobile typography",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
-  "description": "A plugin to apply Mobile typography styles",
+  "description": "Make it look like a mobile",
   "author": "Dldisud",
   "authorUrl": "https://github.com/dldisud",
   "isDesktopOnly": false
