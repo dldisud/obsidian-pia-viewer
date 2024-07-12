@@ -1,6 +1,6 @@
 {
-  "id": "mobile-typography",
-  "name": "Mobile typography",
+  "id": "pia-viewer",
+  "name": "Pia viewer",
   "version": "1.0.0",
   "minAppVersion": "0.15.0",
   "description": "Make it look like a mobile",
