@@ -18,9 +18,9 @@ class CustomTypographyPlugin extends Plugin {
             munpia: `
                 .markdown-preview-view {
                     width: 109mm;
-                    min-height: 1188mm;
+                    min-height: 100vh;
                     margin: 8mm auto;
-                    padding: 0mm;
+                    padding: 0mm 0mm 50mm; 
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
@@ -28,7 +28,7 @@ class CustomTypographyPlugin extends Plugin {
                 .markdown-preview-sizer {
                     width: 100%;
                     max-width: 109mm;
-                    min-height: 1188mm;
+                    height: auto;
                 }
                 .markdown-preview-sizer > div {
                     width: 100%;
@@ -37,9 +37,9 @@ class CustomTypographyPlugin extends Plugin {
             novelpia: `
                 .markdown-preview-view {
                     width: 115mm;
-                    min-height: 1188mm;
+                    min-height: 100vh;
                     margin: 5mm auto;
-                    padding: 5mm 0mm 0mm;
+                    padding: 5mm 0mm 50mm;
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
@@ -47,14 +47,14 @@ class CustomTypographyPlugin extends Plugin {
                 .markdown-preview-sizer {
                     width: 100%;
                     max-width: 115mm;
-                    min-height: 1188mm;
+                    height: auto;
                 }
                 .markdown-preview-sizer > div {
                     width: 100%;
                 }
             `
         };
-
+    
         const style = document.createElement('style');
         style.id = 'custom-typography-style';
         style.textContent = styles[this.settings.selectedStyle];
@@ -87,10 +87,9 @@ class CustomTypographySettingTab extends PluginSettingTab {
         const { containerEl } = this;
 
         containerEl.empty();
-        
 
         new Setting(containerEl)
-            .setName('Select typography Style')
+            .setName('Select typography style')
             .setDesc('Choose the typography style to apply.')
             .addDropdown(dropdown => dropdown
                 .addOption('munpia', 'Munpia')
