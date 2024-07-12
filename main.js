@@ -90,7 +90,7 @@ class CustomTypographySettingTab extends PluginSettingTab {
         
 
         new Setting(containerEl)
-            .setName('Select Typography Style')
+            .setName('Select typography Style')
             .setDesc('Choose the typography style to apply.')
             .addDropdown(dropdown => dropdown
                 .addOption('munpia', 'Munpia')
