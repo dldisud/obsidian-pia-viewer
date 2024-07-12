@@ -88,7 +88,6 @@ class CustomTypographySettingTab extends PluginSettingTab {
 
         containerEl.empty();
         
-        containerEl.createEl('h2', { text: 'Custom Typography Settings' });
 
         new Setting(containerEl)
             .setName('Select Typography Style')
