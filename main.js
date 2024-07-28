@@ -6,6 +6,7 @@ class CustomTypographyPlugin extends Plugin {
         await this.loadSettings();
         this.addSettingTab(new CustomTypographySettingTab(this.app, this));
         this.loadStyles();
+        this.registerEvent(this.app.workspace.on('resize', this.handleResize.bind(this)));
     }
 
     onunload() {
@@ -17,40 +18,50 @@ class CustomTypographyPlugin extends Plugin {
         const styles = {
             munpia: `
                 .markdown-preview-view {
-                    width: 109mm;
+                    width: 100%;
+                    max-width: 109mm;
                     min-height: 100vh;
-                    margin: 8mm auto;
-                    padding: 0mm 0mm 50mm; 
+                    margin: 0 auto;
+                    padding: 8mm 4mm 50mm; 
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
                 }
                 .markdown-preview-sizer {
                     width: 100%;
-                    max-width: 109mm;
                     height: auto;
                 }
                 .markdown-preview-sizer > div {
                     width: 100%;
+                }
+                @media screen and (max-width: 768px) {
+                    .markdown-preview-view {
+                        padding: 4mm 2mm 25mm;
+                    }
                 }
             `,
             novelpia: `
                 .markdown-preview-view {
-                    width: 115mm;
+                    width: 100%;
+                    max-width: 115mm;
                     min-height: 100vh;
-                    margin: 5mm auto;
-                    padding: 5mm 0mm 50mm;
+                    margin: 0 auto;
+                    padding: 5mm 4mm 50mm;
                     display: flex;
                     justify-content: center;
                     align-items: flex-start;
                 }
                 .markdown-preview-sizer {
                     width: 100%;
-                    max-width: 115mm;
                     height: auto;
                 }
                 .markdown-preview-sizer > div {
                     width: 100%;
+                }
+                @media screen and (max-width: 768px) {
+                    .markdown-preview-view {
+                        padding: 3mm 2mm 25mm;
+                    }
                 }
             `
         };
@@ -74,6 +85,11 @@ class CustomTypographyPlugin extends Plugin {
 
     async saveSettings() {
         await this.saveData(this.settings);
+    }
+
+    handleResize() {
+        this.removeStyles();
+        this.loadStyles();
     }
 }
 
