@@ -1,7 +1,7 @@
 {
   "id": "pia-viewer",
   "name": "Pia viewer",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "minAppVersion": "0.15.0",
   "description": "Make it look like a mobile",
   "author": "dldisud",
