@@ -11,3 +11,4 @@
 #Currently, we only support two for Munpia and Novelpia, but if you have a request, I will make another format as well.
 
 #I'm not good at English, so please understand
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/D1D710BIPE)
